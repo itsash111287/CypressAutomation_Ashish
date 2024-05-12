@@ -4,9 +4,9 @@ jobs:
  build:
    docker:
      - image: cimg/node:18.14.2
-    steps:
-      - checkout
-      - run: test1.cy.js
+   steps:
+     - checkout
+     - run: node test1.cy.js
 
 workflows:
   build_now:
